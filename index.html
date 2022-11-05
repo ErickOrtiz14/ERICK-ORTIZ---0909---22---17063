@@ -1,0 +1,37 @@
+<!-- ERICK ORTIZ - 0909-22-17063 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+</head>
+<body>
+    <script>
+        //muestro en pantalla una alerta 
+        alert(a = prompt("Bienvenido al Hotel Dulces sueños, a continuación elija la habitación que mas se acomode a sus necesidades: 1-Clásica; 2-Doble; 3-Suite")); // CALCULAR TARIFA POR HABITACION 1
+        if (a == "1") {
+            ivaA = 150*(12/100);
+            inguatA = 150*(10/100);
+            tarifatA = 150 + ivaA + inguatA;
+            alert("HABITACIÓN CLÁSICA. \n Tarifa basica sin impuestos: Q150 \n IVA 12%: Q" + ivaA + "\n Intagua 10%: Q" + inguatA + "\n Tarifa Total por noche: Q" + tarifatA); // MOSTRAR TARIFA POR HABITACION 1
+        }
+        else if (a == "2") {              // CALCULAR TARIFA POR HABITACION 2
+            ivaA = 275*(12/100);
+            inguatA = 275*(10/100);
+            tarifatA = 275 + ivaA + inguatA;
+            alert("HABITACIÓN DOBLE. \n Tarifa básica sin impuestos: Q275 \n IVA 12%: Q" + ivaA + "\n Intagua 10%: Q" + inguatA + "\n Tarifa Total por noche: Q" + tarifatA); // MOSTRAR TARIFA POR HABITACION 2
+        }
+        else if (a == "3") {            // CALCULAR TARIFA POR HABITACION 3
+            ivaA = 450*(12/100);
+            inguatA = 450*(10/100);
+            tarifatA = 450 + ivaA + inguatA;
+            alert("HABITACIÓN SUIT. \n Tarifa básica sin impuestos: Q450 \n IVA 12%: Q" + ivaA + "\n Intagua 10%: Q" + inguatA + "\n Tarifa Total por noche: Q" + tarifatA); // MOSTRAR TARIFA POR HABITACION 3
+        }
+        else {
+           alert("La opción " + a + " no existe. Reinicie el programa e ingrese una opción válida.");        
+        }
+    </script>
+</body>
+</html>
